@@ -29,6 +29,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
+                
                 echo '=== ETAPA 4: DESPLIEGUE (DEPLOY) ==='
                 echo 'Construyendo imagen segura: docker build -t secure-app:latest .'
                 echo 'Levantando contenedor en entorno de producción local...'
